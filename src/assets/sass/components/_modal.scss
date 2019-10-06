@@ -1,0 +1,46 @@
+.ReactModal__Overlay{
+  z-index: 10001;
+}
+.ReactModal__Content{
+  padding: 0!important;
+  border: none!important;
+}
+.ReactModal__Content--after-open{
+  width: calc(100% - 18em);
+  right: 0!important;
+  left: 18em!important;
+  max-width: 900px;
+  margin: 0 auto;
+  top:50% !important;
+  bottom: auto!important;
+  transform:translateY(-50%);
+  @include breakpoint('<=large') {
+    max-width: calc(100% - 2em);
+    width: 100%;
+    left: 0!important;
+  }
+}
+
+.dark{
+  background:#24292e;
+  color:#ffffff;
+  label, input, input[type="checkbox"] + label, input[type="radio"] + label{
+    color: inherit;
+  }
+  button{
+    color:#ffffff!important;
+    &:hover{
+      &:after{
+        background: #b9b9b9;
+      }
+    }
+  }
+}
+.rsvp{
+  .button{
+    border-color: rgba(28, 28, 28, 0.35)!important;
+    &:first-of-type{
+      margin-right:1em;
+    }
+  }
+}

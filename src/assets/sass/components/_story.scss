@@ -1,0 +1,15 @@
+.story{
+  //background: rgba(248, 212, 202, 0.3);
+  background:#deb3a4;
+  .image{
+    width:100%;
+    max-width:25em;
+    overflow: hidden;
+    @include breakpoint('<=small') {
+      max-width:100%;
+    }
+    .gatsby-image-wrapper{
+      height: 100%;
+    }
+  }
+}

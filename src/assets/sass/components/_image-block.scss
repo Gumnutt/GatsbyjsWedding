@@ -1,0 +1,87 @@
+.image-block{
+  @include vendor('display', 'flex');
+  @include vendor('align-items', 'flex-end');
+  @include vendor('flex-direction', 'column');
+  @include breakpoint('>=medium') {
+    @include vendor('flex-direction', 'row');
+  }
+  .image{
+    width:100%;
+    max-height: 320px;
+    overflow: hidden;
+    &:after{
+      content: '';
+      position: absolute;
+      height:100%;
+      width:100%;
+      background:rgba(28, 28, 28, 0.35);
+      top: 0;
+    }
+    @include breakpoint('>=medium') {
+      max-width:40em;
+      max-height: none;
+      &:after{
+        display: none;
+      }
+    }
+    img{
+      border-radius: 0;
+      @include breakpoint('>=medium') {
+        border-radius: 0.25em;
+      }
+    }
+  }
+  .text-container{
+    z-index: 100;
+    padding: 2em 4em;
+    width: 100%;
+    position: absolute;
+    bottom: 2em;
+    color: white;
+    @include breakpoint('>=medium') {
+      position: relative;
+      background: white;
+      padding:1em;
+      margin-bottom: 3em;
+      width: auto;
+      color: #1c1c1c;
+    }
+    p{
+      margin-bottom: 0;
+      @include breakpoint('>=medium') {
+        color:rgba(28, 28, 28, 0.35);
+      }
+    }
+    h2{
+      color: inherit;
+    }
+  }
+}
+.left-block{
+  padding: 0;
+  @include breakpoint('>=medium') {
+    padding: 4em 0 2em;
+  }
+  .text-container{
+    @include breakpoint('>=medium') {
+      margin-left: -5em;
+    }
+  }
+}
+.right-block{
+  padding: 0;
+  @include vendor('justify-content', 'flex-end');
+  @include vendor('flex-direction', 'column-reverse');
+  @include breakpoint('>=medium') {
+    @include vendor('flex-direction', 'row');
+    padding: 2em 0 4em;
+  }
+  .text-container{
+    padding: 2em 4em;
+    @include breakpoint('>=medium') {
+      padding: 1em;
+      margin-right: -5em;
+      text-align: right;
+    }
+  }
+}

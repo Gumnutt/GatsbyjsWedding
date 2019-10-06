@@ -1,0 +1,8 @@
+.wrapper{
+  &.fullscreen{
+    
+    @include vendor('flex-direction', 'column');
+    @include vendor('justify-content', 'flex-end');
+    min-height: 100vh;
+  }
+}
