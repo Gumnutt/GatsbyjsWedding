@@ -50,9 +50,9 @@ const IndexPage = () => (
         <div className="inner">
           <h2>Wedding FAQs</h2>
           <FAQ question="What should you wear?" answer="Seqins are encouraged, but not mandatory." />
-          <FAQ question="What is the parking like?" answer="There is plenty of parking at both locations, but we do suggest using Uber to get to the reception as its only a 15min trip and we would like you to enjoy yuor night." />
+          <FAQ question="What is the parking like?" answer="There is plenty of parking at both locations, but we do suggest using Uber to get to the reception as its only a 15min trip and we would like you to enjoy your night." />
           <FAQ question="Are the venues accessible?" answer="The Ceremony is on the ground level. The reception is held in the upper house, the venue has a private lift inside." />
-          <FAQ question="When should you RSVP by?" answer="If you could let us know if you're coming by the 8th of January that would be greeatly appricated." />
+          <FAQ question="When should you RSVP by?" answer="If you could let us know if you're coming by the 8th of January that would be greatly appricated." />
           <FAQ question="I'm getting you a gift, what should I get you 😬?" answer="We wanted to enjoy this day with you, so you are gift enough! But if you are desperate to show us how much you love us then there will be a wishing well that will help contribute to our honeymoon." />
         </div>
       </section>

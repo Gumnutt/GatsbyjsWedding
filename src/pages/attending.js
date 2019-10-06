@@ -8,53 +8,54 @@ const Attending = () => (
     <div id="wrapper">
       <section id="main" className="wrapper dark">
         <div className="inner">
-          <form name="contact-form" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+          <form name="Wedding Attending Form" method="thank-you" action="" data-netlify="true" data-netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="Wedding Attending Form" />
             <div className="row gtr-uniform">
-              <div class="col-6 col-12-small">
+              <div className="col-6 col-12-small">
                 <label>First name</label>
-                <input type="text" name="first-name" placeholder="Gabe" value="" />
+                <input type="text" name="first-name" placeholder="Gabe" />
               </div>
-              <div class="col-6 col-12-small">
+              <div className="col-6 col-12-small">
                 <label>Last name</label>
-                <input type="text" name="last-name" placeholder="Newell" value="" />
+                <input type="text" name="last-name" placeholder="Newell" />
               </div>
-              <div class="col-6 col-12-small">
+              <div className="col-6 col-12-small">
                 <label>Your email</label>
-                <input type="email" name="email" placeholder="name@name.com" value="" />
+                <input type="email" name="email" placeholder="name@name.com" />
               </div>
-              <div class="col-6 col-12-small">
+              <div className="col-6 col-12-small">
                 <label>A song that will get you dancing</label>
-                <input type="text" name="song" placeholder="Gold Digger - Kanye West" value="" />
+                <input type="text" name="song" placeholder="Gold Digger - Kanye West" />
               </div>
 
-              <div class="col-4 col-12-small">
+              <div className="col-4 col-12-small">
                 <input type="radio" id="vegan" name="vegan" />
-                <label for="vegan">Vegan</label>
+                <label htmlFor="vegan">Vegan</label>
               </div>
-              <div class="col-4 col-12-small">
-                <input type="radio" id="vegan" name="vegan"  />
-                <label for="vegan">Vegaterian</label>
+              <div className="col-4 col-12-small">
+                <input type="radio" id="vegaterian" name="vegaterian"  />
+                <label htmlFor="vegaterian">Vegaterian</label>
               </div>
-              <div class="col-4 col-12-small">
+              <div className="col-4 col-12-small">
                 <input type="radio" id="gluten" name="gluten"  />
-                <label for="gluten">Gluten Free</label>
+                <label htmlFor="gluten">Gluten Free</label>
               </div>
-              <div class="col-4 col-12-small">
+              <div className="col-4 col-12-small">
                 <input type="radio" id="dairy" name="dairy"  />
-                <label for="dairy">Dairy Free</label>
+                <label htmlFor="dairy">Dairy Free</label>
               </div>
-              <div class="col-4 col-12-small">
+              <div className="col-4 col-12-small">
                 <input type="radio" id="fish" name="fish"  />
-                <label for="fish">Fish Allergy</label>
+                <label htmlFor="fish">Fish Allergy</label>
               </div>
-              <div class="col-4 col-12-small">
+              <div className="col-4 col-12-small">
                 <input type="radio" id="other" name="other"  />
-                <label for="other">Other</label>
+                <label htmlFor="other">Other</label>
               </div>
 
 
-              <div class="col-12 col-12-xsmall">
-                <button>Send</button>
+              <div className="col-12 col-12-small">
+                <button type="submit">Send</button>
               </div>
             </div>
           </form>
