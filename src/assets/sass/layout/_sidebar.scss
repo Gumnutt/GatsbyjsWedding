@@ -111,7 +111,7 @@
       &:after {
         @include vendor(
           'background-image',
-          'linear-gradient(to right, #{_palette(accent3)}, #{_palette(accent1)})'
+          'linear-gradient(to right, #ffffff, #{_palette(accent1)})'
         );
         @include vendor(
           'transition',
@@ -227,7 +227,11 @@
   //   display: none;
   // }
 }
-
+@include breakpoint('>=large') {
+  .navigation button{
+    display:none
+  }
+}
 @include breakpoint('<=large') {
   .navigation button {
     display: block;

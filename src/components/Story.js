@@ -2,6 +2,7 @@ import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import '../assets/sass/main.scss';
+
 const Story = props => (
   <section id="one" className="wrapper spotlights story">
     <section>
@@ -39,11 +40,11 @@ const Story = props => (
       <div className="content">
         <div className="inner">
           <h2>Our story</h2>
-          <p>
-            Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam
-            turpis mauris, eu ultricies erat malesuada quis. Aliquam
-            dapibus.
-          </p>
+          <p>After 10 years of Brynn finally made it offical and asked Estelle on a date and we want you to be there. We were going to write a really loving and heart felt rendition of our life together.</p>
+          <p>Instead we thought we would try and sum up or relationship in a song.</p>
+          <p>Enjoy.</p>
+          <a className="button" target="_blank" href="https://www.youtube.com/watch?v=AbhVMGVCdpo">Brynn to Estelle</a>
+          <a className="button" target="_blank" href="https://www.youtube.com/watch?v=LAzodf69rfk">Estelle to Brynn</a>
         </div>
       </div>
     </section>

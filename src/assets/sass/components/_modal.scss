@@ -36,6 +36,15 @@
     }
   }
 }
+.light{
+  color:#1c1c1c;
+  label, input, input[type="checkbox"] + label, input[type="radio"] + label{
+    color: inherit;
+  }
+  button{
+    border-color: rgba(28, 28, 28, 0.35) !important;
+  }
+}
 .rsvp{
   .button{
     border-color: rgba(28, 28, 28, 0.35)!important;

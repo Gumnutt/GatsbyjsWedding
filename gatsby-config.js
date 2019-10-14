@@ -8,8 +8,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Hyperspace',
-        short_name: 'starter',
+        name: 'Crisp Wedding',
+        short_name: 'Estelle and Brynn',
         start_url: '/',
         background_color: '#663399',
         theme_color: '#663399',

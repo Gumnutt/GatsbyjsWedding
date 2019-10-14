@@ -42,7 +42,7 @@ const IndexPage = () => (
             <p>If you are intending to drive please beaware that there is only paid parking in the city.</p>
             <p>Below are links that will open the Uber app on your phone with the destinations prefilled.</p>
             <a href="https://m.uber.com/ul/fmeqzJHkpzc1w0tdeZQfex5ETQQxGYRw&action=pickup=my_location&dropoff[nickname]=ActewAGL%20Building&dropoff[formatted_address]=40%20Bunda%20S%2CCanberra%20ACT%2C2600" className="button">Get me to the Ceremony</a>
-            <a href="https://m.uber.com/ul/fmeqzJHkpzc1w0tdeZQfex5ETQQxGYRw&action=pickup=my_location&dropoff[nickname]=ActewAGL%20Building&dropoff[formatted_address]=40%20Bunda%20S%2CCanberra%20ACT%2C2600" className="button">Get me to the Reception</a>
+            <a href="https://m.uber.com/ul/fmeqzJHkpzc1w0tdeZQfex5ETQQxGYRw&action=pickup=my_location&dropoff[nickname]=The%20Royal%20Hotel%20QBN&dropoff[formatted_address]=85%20Monaro%20St%2CQueanbeyan%20NSW%202620" className="button">Get me to the Reception</a>
           </div>
         </div>
       </section>
@@ -59,8 +59,8 @@ const IndexPage = () => (
       <section id="six" className="wrapper rsvp">
         <div className="inner">
           <h2>RSVP</h2>
-          <Link className="button" to="/attending/" state={{noScroll: true}} asModal>Hell Yeah, Baby!</Link>
-          <Link className="button" to="/notAttending/" state={{noScroll: true}} asModal>We love you, but just not that much</Link>
+          <Link className="button" to="/attending/">Hell Yeah, Baby!</Link>
+          <Link className="button" to="/notAttending/">We love you, but just not that much</Link>
         </div>
       </section>
     </div>

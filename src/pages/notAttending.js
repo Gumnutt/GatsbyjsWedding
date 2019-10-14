@@ -6,23 +6,25 @@ import '../assets/sass/main.scss';
 const Attending = () => (
   <Layout>
     <div id="wrapper">
-      <section id="main" className="wrapper dark">
+      <section id="main" className="wrapper fullscreen light">
         <div className="inner">
-          <form name="contact-form" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+          <h1>I'm in. Get me on the list</h1>
+          <form name="contact-form" method="post" action="/ohwell" data-netlify="true" data-netlify-honeypot="bot-field">
+            <p className="hidden"><label>Don’t fill this out if you're human: <input name="bot-field" /></label></p>
             <div className="row gtr-uniform">
-              <div class="col-6 col-12-xsmall">
+              <div className="col-6 col-12-xsmall">
                 <label>First name</label>
-                <input type="text" name="first-name" placeholder="Gabe" value="" />
+                <input type="text" name="first-name" placeholder="Gabe" defaultValue="" />
               </div>
-              <div class="col-6 col-12-xsmall">
+              <div className="col-6 col-12-xsmall">
                 <label>Last name</label>
-                <input type="text" name="last-name" placeholder="Newell" value="" />
+                <input type="text" name="last-name" placeholder="Newell" defaultValue="" />
               </div>
-              <div class="col-6 col-12-xsmall">
+              <div className="col-6 col-12-xsmall">
                 <label>Your email</label>
-                <input type="email" name="email" placeholder="name@name.com" value="" />
+                <input type="email" name="email" placeholder="name@name.com" defaultValue="" />
               </div>
-              <div class="col-12 col-12-xsmall">
+              <div className="col-12 col-12-xsmall">
                 <button>Send</button>
               </div>
             </div>

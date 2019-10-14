@@ -1,3 +1,6 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
 // Misc.
 	$misc: (
 		z-index-base:		10000,
@@ -24,7 +27,7 @@
 
 // Font.
 	$font: (
-		family:				(Arial, Helvetica, sans-serif),
+		family:				('Open Sans', sans-serif),
 		family-fixed:		('Courier New', monospace),
 		weight:				normal,
 		weight-bold:		bold,
@@ -38,7 +41,7 @@
 		fg:					rgba(28, 28, 28, 0.35),
 		fg-bold:			#1c1c1c,
 		fg-light:			rgba(28, 28, 28, 0.35),
-		border:				rgba(255,255,255,0.15),
+		border:				rgba(28, 28, 28, 0.35),
 		border-bg:			rgba(255,255,255,0.05),
 		accent1:			#E0827E,
 		accent1-alt:		darken(#5e42a6, 10),

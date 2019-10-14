@@ -6,7 +6,12 @@ export function onRenderBody(
      <script
         key="abc"
         type="text/javascript"
-        src="src/assets/js/mobileMenu.js"
+        src="src/static/mobileMenu.js"
+      />,
+      <script
+        key={`body`}
+        type="text/javascript"
+        src="src/static/fieldToggle.js"
       />,
   ]);
 }

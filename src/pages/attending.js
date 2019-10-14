@@ -6,9 +6,11 @@ import '../assets/sass/main.scss';
 const Attending = () => (
   <Layout>
     <div id="wrapper">
-      <section id="main" className="wrapper dark">
+      <section id="main" className="wrapper light fullscreen">
         <div className="inner">
-          <form name="Wedding Attending Form" method="thank-you" action="" data-netlify="true" data-netlify-honeypot="bot-field">
+          <h1>I'm in. Get me on the list</h1>
+          <form name="Wedding Attending Form" id="wedForm" method="POST" action="/thankyou" data-netlify="true" data-netlify-honeypot="bot-field">
+          <p className="hidden"><label>Don’t fill this out if you're human: <input name="bot-field" /></label></p>
           <input type="hidden" name="form-name" value="Wedding Attending Form" />
             <div className="row gtr-uniform">
               <div className="col-6 col-12-small">
@@ -29,30 +31,34 @@ const Attending = () => (
               </div>
 
               <div className="col-4 col-12-small">
-                <input type="radio" id="vegan" name="vegan" />
+                <input type="checkbox" id="vegan" name="vegan" />
                 <label htmlFor="vegan">Vegan</label>
               </div>
               <div className="col-4 col-12-small">
-                <input type="radio" id="vegaterian" name="vegaterian"  />
+                <input type="checkbox" id="vegaterian" name="vegaterian"  />
                 <label htmlFor="vegaterian">Vegaterian</label>
               </div>
               <div className="col-4 col-12-small">
-                <input type="radio" id="gluten" name="gluten"  />
+                <input type="checkbox" id="gluten" name="gluten"  />
                 <label htmlFor="gluten">Gluten Free</label>
               </div>
               <div className="col-4 col-12-small">
-                <input type="radio" id="dairy" name="dairy"  />
+                <input type="checkbox" id="dairy" name="dairy"  />
                 <label htmlFor="dairy">Dairy Free</label>
               </div>
               <div className="col-4 col-12-small">
-                <input type="radio" id="fish" name="fish"  />
+                <input type="checkbox" id="fish" name="fish"  />
                 <label htmlFor="fish">Fish Allergy</label>
               </div>
-              <div className="col-4 col-12-small">
-                <input type="radio" id="other" name="other"  />
+              {/* <div className="col-4 col-12-small">
+                <input type="checkbox" id="other" name="other"  />
                 <label htmlFor="other">Other</label>
-              </div>
+              </div> */}
 
+              <div id="hiddenAllergy" className="col-12 col-12-small">
+                <label htmlFor="other-allergy">Got an allergy thats not on the list? Let us know.</label>
+                <textarea name="other-allery" placeholder="Things that taste good but you can't have them" />
+              </div>
 
               <div className="col-12 col-12-small">
                 <button type="submit">Send</button>

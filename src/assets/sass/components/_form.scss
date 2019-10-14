@@ -234,3 +234,12 @@
 		color: _palette(fg-light) !important;
 		opacity: 1.0;
 	}
+
+	.hidden{
+		height: 0;
+    overflow: hidden;
+		transition: height .3s ease-in-out;
+	}
+	.not-hidden{
+		height: auto;
+	}

@@ -1,0 +1,23 @@
+.thankyou{
+  > .inner{
+    @include vendor('display', 'flex');
+    @include vendor('flex-direction', 'column');
+    @include vendor('justify-content', 'space-evenly');
+    @include vendor('align-items', 'center');
+    height: 100vh;
+    @media(min-width:63em) {
+      @include vendor('flex-direction', 'row');
+      padding: 0;
+    }
+  }
+  .button{
+    border-color: rgba(28, 28, 28, 0.35)!important;
+    &:first-of-type{
+      margin-right:1em;
+      margin-bottom: 2em;
+      @media(min-width:63em) {
+        margin-bottom:0;
+      }
+    }
+  }
+}
