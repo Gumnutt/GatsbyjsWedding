@@ -39,7 +39,7 @@ const IndexPage = () => (
           <div className="textBlock">
             <h2>Getting around</h2>
             <p>Betweeen the Ceremony and the Reception is about a 15min trip. We recommend Uber for getting around on the day, but if you are wanting to drive there is plenty of close parking at both locations.</p>
-            <p>If you are intending to drive please beaware that there is only paid parking in the city.</p>
+            <p>If you are intending to drive please be aware that there is only paid parking in the city.</p>
             <p>Below are links that will open the Uber app on your phone with the destinations prefilled.</p>
             <a href="https://m.uber.com/ul/fmeqzJHkpzc1w0tdeZQfex5ETQQxGYRw&action=pickup=my_location&dropoff[nickname]=ActewAGL%20Building&dropoff[formatted_address]=40%20Bunda%20S%2CCanberra%20ACT%2C2600" className="button">Get me to the Ceremony</a>
             <a href="https://m.uber.com/ul/fmeqzJHkpzc1w0tdeZQfex5ETQQxGYRw&action=pickup=my_location&dropoff[nickname]=The%20Royal%20Hotel%20QBN&dropoff[formatted_address]=85%20Monaro%20St%2CQueanbeyan%20NSW%202620" className="button">Get me to the Reception</a>
@@ -49,7 +49,7 @@ const IndexPage = () => (
       <section id="five" className="wrapper">
         <div className="inner">
           <h2>Wedding FAQs</h2>
-          <FAQ question="What should you wear?" answer="Seqins are encouraged, but not mandatory." />
+          <FAQ question="What should you wear?" answer="Sequins are encouraged, but not mandatory." />
           <FAQ question="What is the parking like?" answer="There is plenty of parking at both locations, but we do suggest using Uber to get to the reception as its only a 15min trip and we would like you to enjoy your night." />
           <FAQ question="Are the venues accessible?" answer="The Ceremony is on the ground level. The reception is held in the upper house, the venue has a private lift inside." />
           <FAQ question="When should you RSVP by?" answer="If you could let us know if you're coming by the 8th of January that would be greatly appricated." />
@@ -60,7 +60,7 @@ const IndexPage = () => (
         <div className="inner">
           <h2>RSVP</h2>
           <Link className="button" to="/attending/">Hell Yeah, Baby!</Link>
-          <Link className="button" to="/notAttending/">We love you, but just not that much</Link>
+          <Link className="button" to="/notAttending/">I love you, just not that much</Link>
         </div>
       </section>
     </div>

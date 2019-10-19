@@ -104,3 +104,9 @@
 			}
 		}
 	}
+
+	.button{
+		@include breakpoint('<=small') {
+			margin-bottom: 1em;
+		}
+	}
