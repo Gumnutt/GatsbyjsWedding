@@ -8,7 +8,7 @@ const Attending = () => (
     <div id="wrapper">
       <section id="main" className="wrapper fullscreen light">
         <div className="inner">
-          <h1>I'm in. Get me on the list</h1>
+          <h1>🥺 Say it ain't so</h1>
           <form name="contact-form" method="post" action="/ohwell" data-netlify="true" data-netlify-honeypot="bot-field">
             <p className="hidden"><label>Don’t fill this out if you're human: <input name="bot-field" /></label></p>
             <div className="row gtr-uniform">

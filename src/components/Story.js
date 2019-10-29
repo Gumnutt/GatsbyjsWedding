@@ -5,7 +5,6 @@ import '../assets/sass/main.scss';
 
 const Story = props => (
   <section id="one" className="wrapper spotlights story">
-    <section>
     <div className="image">
       <StaticQuery
         query={graphql`
@@ -41,13 +40,12 @@ const Story = props => (
         <div className="inner">
           <h2>Our story</h2>
           <p>After 10 years, Brynn finally made it official and asked Estelle on a date and we want you to be there. We were going to write a really loving and heart felt rendition of our life together.</p>
-          <p>Instead we thought we would try and sum up our relationship with a song..</p>
+          <p>Instead we thought we would try and sum up our relationship with a choosen song for each other.</p>
           <p>Enjoy.</p>
           <a className="button" target="_blank" href="https://www.youtube.com/watch?v=AbhVMGVCdpo">Brynn to Estelle</a>
           <a className="button" target="_blank" href="https://www.youtube.com/watch?v=LAzodf69rfk">Estelle to Brynn</a>
         </div>
       </div>
-    </section>
   </section>
 );
 export default Story;
