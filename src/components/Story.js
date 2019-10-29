@@ -5,6 +5,7 @@ import '../assets/sass/main.scss';
 
 const Story = props => (
   <section id="one" className="wrapper spotlights story">
+    <section>
     <div className="image">
       <StaticQuery
         query={graphql`
@@ -46,6 +47,7 @@ const Story = props => (
           <a className="button" target="_blank" href="https://www.youtube.com/watch?v=LAzodf69rfk">Estelle to Brynn</a>
         </div>
       </div>
+      </section>
   </section>
 );
 export default Story;
