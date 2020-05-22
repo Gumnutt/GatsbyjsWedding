@@ -29,6 +29,13 @@ module.exports = {
         path: 'src/images',
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `gallery`,
+        path: `${__dirname}/gallery`,
+      },
+    },
     'gatsby-plugin-modal-routing',
   ],
 };
