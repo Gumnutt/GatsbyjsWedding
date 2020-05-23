@@ -1,6 +1,7 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import Img from "gatsby-image"
+import ImgWithOrient from "../components/imageOrient"
 
 const useGallery = () => {
   const data = useStaticQuery(graphql`
@@ -10,8 +11,10 @@ const useGallery = () => {
       ) {
         nodes {
           id
+          name
           childImageSharp {
-            fluid {
+            fluid(quality: 100) {
+              aspectRatio
               ...GatsbyImageSharpFluid
             }
           }
@@ -23,17 +26,23 @@ const useGallery = () => {
   return data.allFile.nodes.map(node => ({
     ...node.childImageSharp, // Note that we're spreading the childImageSharp object here
     id: node.id,
+    aspectRatio: node.childImageSharp.fluid.aspectRatio,
+    name: node.name
   }));
 };
 
-
 const Gallery = () => {
     const images = useGallery()
-
     return (
-        <div>
-            {images.map(({ id, fluid }) => (
-                <Img key={id} fluid={fluid} />
+        <div className="gallery-wrapper">
+            {images.map(({ id, fluid, aspectRatio, name }) => (
+                // <Img key={id} fluid={fluid} aspectRatio={aspectRatio} className={`${orientation}`} />
+                <ImgWithOrient
+                  key={id}
+                  aspectRatio={aspectRatio}
+                  alt={name}
+                  fluid={fluid}
+                />
             ))}
         </div>
     )
