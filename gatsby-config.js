@@ -37,6 +37,12 @@ module.exports = {
         path: `${__dirname}/gallery`,
       },
     },
+    {
+      resolve: "gatsby-plugin-netlify-cache",
+      options: {
+        cachePublic: true
+      }
+    },
     'gatsby-plugin-modal-routing',
   ],
 };
