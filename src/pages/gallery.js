@@ -1,8 +1,9 @@
 import React from 'react';
-import Layout from '../components/layout';
+import Layout from '../components/layout'
 import Gallery from '../components/Gallery'
 
-const ThankYou = () => (
+
+const galleryPage = () => (
   <Layout>
     <div id="wrapper">
       <section id="main" className="wrapper gallery">
@@ -14,4 +15,4 @@ const ThankYou = () => (
   </Layout>
 );
 
-export default ThankYou;
+export default galleryPage;

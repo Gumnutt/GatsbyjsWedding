@@ -1,3 +1,4 @@
+require('dotenv').config();
 module.exports = {
   pathPrefix: `/gatsby-starter-hyperspace/`, // This path is subpath of your hosting https://domain/portfolio
   siteMetadata: {
@@ -34,6 +35,13 @@ module.exports = {
       options: {
         name: `gallery`,
         path: `${__dirname}/gallery`,
+      },
+    },
+    {
+    resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `cloudinary-images`,
+        path: `${__dirname}/src/cloudinary-images`,
       },
     },
     'gatsby-plugin-modal-routing',

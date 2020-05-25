@@ -12,12 +12,20 @@
     grid-auto-flow: dense;
     padding: 10px;
     transition: all 300ms;
-    .gatsby-image-wrapper {
-      padding: 1rem;
+    .image-wrapper {
       border-radius: 5px;
       cursor: pointer;
-      &:nth-child(odd) {
-          background-color: #424242;
+      position: relative;
+      overflow: hidden;
+      .gatsby-image-wrapper{
+        height:100%
+      }
+      img{
+        position: absolute;
+        top:0;
+        left:0;
+        object-fit: cover;
+        width: 100%;
       }
     }
     .landscape, .portrait{

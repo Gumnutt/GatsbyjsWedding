@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import Img from "gatsby-image"
 import ImgWithOrient from "../components/imageOrient"
@@ -34,9 +34,8 @@ const useGallery = () => {
 const Gallery = () => {
     const images = useGallery()
     return (
-        <div className="gallery-wrapper">
+        <div className='gallery-wrapper'>
             {images.map(({ id, fluid, aspectRatio, name }) => (
-                // <Img key={id} fluid={fluid} aspectRatio={aspectRatio} className={`${orientation}`} />
                 <ImgWithOrient
                   key={id}
                   aspectRatio={aspectRatio}
@@ -45,6 +44,7 @@ const Gallery = () => {
                 />
             ))}
         </div>
+        
     )
 }
 
