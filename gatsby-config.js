@@ -37,13 +37,6 @@ module.exports = {
         path: `${__dirname}/gallery`,
       },
     },
-    {
-    resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `cloudinary-images`,
-        path: `${__dirname}/src/cloudinary-images`,
-      },
-    },
     'gatsby-plugin-modal-routing',
   ],
 };
