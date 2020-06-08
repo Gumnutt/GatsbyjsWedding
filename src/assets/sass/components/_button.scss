@@ -16,10 +16,10 @@
 			'border-color #{_duration(transition)} ease'
 		));
 		background-color: transparent;
-		border: solid 1px !important;
-		border-color: _palette(border) !important;
+		border: solid 1px;
+		border-color: _palette(border);
 		border-radius: 3em;
-		color: _palette(fg-bold) !important;
+		color: _palette(fg-bold);
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.6em;
@@ -73,7 +73,7 @@
 
 		&.primary {
 			background-color: _palette(fg-bold);
-			color: _palette(bg) !important;
+			color: _palette(bg);
 
 			&:after {
 				display: none;
@@ -88,7 +88,7 @@
 		}
 
 		&:hover {
-			border-color: _palette(fg) !important;
+			border-color: _palette(fg);
 
 			&:after {
 				opacity: 0.05;
@@ -96,7 +96,7 @@
 			}
 
 			&:active {
-				border-color: _palette(fg-bold) !important;
+				border-color: _palette(fg-bold);
 
 				&:after {
 					opacity: 0.1;
@@ -108,5 +108,12 @@
 	.button{
 		@include breakpoint('<=small') {
 			margin-bottom: 1em;
+			&.gallery{
+				height: auto;
+				white-space: normal;
+				line-height: 3;
+				padding-top: 1em;
+				padding-bottom: 1em;
+			}
 		}
 	}
