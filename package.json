@@ -11,6 +11,7 @@
     "email": "anubhav.srivastava00@gmail.com"
   },
   "dependencies": {
+    "cache-me-outside": "0.0.10",
     "dotenv": "^8.2.0",
     "gatsby": "^2.22.9",
     "gatsby-cli": "^2.12.34",
@@ -38,6 +39,7 @@
     "smoothscroll-polyfill": "^0.4.4"
   },
   "scripts": {
+    "prebuild": "node ./cache-me-outside.js",
     "develop": "gatsby develop",
     "build": "npm run clean && gatsby build",
     "deploy": "npm run clean && gatsby build --prefix-paths && gh-pages -d public",

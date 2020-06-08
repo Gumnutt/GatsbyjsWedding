@@ -2,7 +2,6 @@ import React from 'react';
 // import { Link } from 'gatsby'
 import Layout from '../components/layout';
 import { Link } from 'gatsby-plugin-modal-routing'
-// import image from '../images/a9xhxAxaqOfQs.gif'
 
 const ThankYou = () => (
   <Layout>
@@ -10,7 +9,6 @@ const ThankYou = () => (
       <section id="main" className="wrapper thankyou">
         <div className="inner">
           <div className="image-container">
-            {/* <img src={image} alt="thankyou image" /> */}
           </div>
           <div className="text-container">
             <h1>That's a shame :(</h1>

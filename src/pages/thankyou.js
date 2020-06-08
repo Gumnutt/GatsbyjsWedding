@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby'
 import Layout from '../components/layout';
-// import image from '../images/5GoVLqeAOo6PK.gif'
 
 const ThankYou = () => (
   <Layout>
@@ -9,7 +8,6 @@ const ThankYou = () => (
       <section id="main" className="wrapper thankyou">
         <div className="inner">
           <div className="image-container">
-            {/* <img src={image} alt="thankyou image" /> */}
           </div>
           <div className="text-container">
             <h1>Perfect. Bellissimo. <br />Bloody Beautiful.</h1>
